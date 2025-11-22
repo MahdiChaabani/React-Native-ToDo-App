@@ -48,20 +48,6 @@ const SettingsScreen = () => {
 
   
 
-  const handleDeleteAllTasks = () => {
-    Alert.alert(
-      "Delete All Tasks",
-      "Are you sure you want to permanently delete all tasks? This action cannot be undone!",
-      [
-        { text: "Cancel", style: "cancel" },
-        { 
-          text: "Delete", 
-          style: "destructive",
-          onPress: () => Alert.alert("Deleted", "All tasks have been deleted") 
-        }
-      ]
-    );
-  };
 
   return (
     <LinearGradient colors={colors.gradients.background} style={settingsStyles.container}>
