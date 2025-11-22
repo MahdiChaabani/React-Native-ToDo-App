@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unresolved */
+
 import { createHomeStyles } from "@/assets/styles/home.styles";
 import { api } from "@/convex/_generated/api";
 import useTheme from "@/hooks/useTheme";
