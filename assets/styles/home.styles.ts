@@ -233,6 +233,26 @@ export const createHomeStyles = (colors: ColorScheme) => {
       lineHeight: 24,
       color: colors.textMuted,
     },
+    filterContainer: {
+  flexDirection: "row",
+  paddingHorizontal: 16,
+  paddingVertical: 12,
+  gap: 8,
+},
+filterButton: {
+  flex: 1,
+},
+filterButtonInner: {
+  paddingVertical: 8,
+  paddingHorizontal: 12,
+  borderRadius: 12,
+  alignItems: "center",
+},
+filterButtonText: {
+  color: "#fff",
+  fontSize: 14,
+  fontWeight: "600",
+},
   });
 
   return styles;

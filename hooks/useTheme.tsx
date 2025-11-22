@@ -1,9 +1,11 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { ColorValue } from "react-native";
 
 // AsyncStorage is React Native’s simple, promise-based API for persisting small bits of data on a user’s device. Think of it as the mobile-app equivalent of the browser’s localStorage, but asynchronous and cross-platform.
 
 export interface ColorScheme {
+  info: ColorValue | null | undefined;
   bg: string;
   surface: string;
   text: string;
@@ -15,6 +17,7 @@ export interface ColorScheme {
   danger: string;
   shadow: string;
   gradients: {
+    info: readonly [ColorValue, ColorValue, ...ColorValue[]];
     background: [string, string];
     surface: [string, string];
     primary: [string, string];
@@ -35,7 +38,7 @@ const lightColors: ColorScheme = {
   bg: "#f8fafc",
   surface: "#ffffff",
   text: "#1e293b",
-  textMuted: "#64748b",
+  textMuted: "#6c7d95ff",
   border: "#e2e8f0",
   primary: "#3b82f6",
   success: "#10b981",
@@ -51,12 +54,14 @@ const lightColors: ColorScheme = {
     danger: ["#ef4444", "#dc2626"],
     muted: ["#9ca3af", "#6b7280"],
     empty: ["#f3f4f6", "#e5e7eb"],
+    info: ["#3b82f6", "#1d4ed8"]
   },
   backgrounds: {
     input: "#ffffff",
     editInput: "#ffffff",
   },
   statusBarStyle: "dark-content" as const,
+  info: undefined
 };
 
 const darkColors: ColorScheme = {
@@ -79,12 +84,14 @@ const darkColors: ColorScheme = {
     danger: ["#ef4444", "#dc2626"],
     muted: ["#374151", "#4b5563"],
     empty: ["#374151", "#4b5563"],
+    info: ["#3b82f6", "#1d4ed8"]
   },
   backgrounds: {
     input: "#1e293b",
     editInput: "#0f172a",
   },
   statusBarStyle: "light-content" as const,
+  info: undefined
 };
 
 interface ThemeContextType {
