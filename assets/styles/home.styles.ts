@@ -79,6 +79,186 @@ export const createHomeStyles = (colors: ColorScheme) => {
       textAlign: "right",
       color: colors.success,
     },
+    
+    // Stats Bar
+    statsBar: {
+      flexDirection: "row",
+      marginHorizontal: 20,
+      marginBottom: 16,
+      backgroundColor: colors.card,
+      borderRadius: 16,
+      padding: 16,
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.08,
+      shadowRadius: 8,
+      elevation: 4,
+    },
+    statItem: {
+      flex: 1,
+      alignItems: "center",
+    },
+    statNumber: {
+      fontSize: 24,
+      fontWeight: "800",
+      color: colors.text,
+      marginBottom: 4,
+    },
+    statLabel: {
+      fontSize: 12,
+      fontWeight: "600",
+      color: colors.textMuted,
+      textTransform: "uppercase",
+      letterSpacing: 0.5,
+    },
+    statDivider: {
+      width: 1,
+      height: "100%",
+      backgroundColor: colors.border + "40",
+      marginHorizontal: 8,
+    },
+
+    // Search Bar
+    searchContainer: {
+      paddingHorizontal: 20,
+      marginBottom: 12,
+    },
+    searchBar: {
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.card,
+      borderRadius: 16,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      gap: 12,
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.05,
+      shadowRadius: 6,
+      elevation: 2,
+    },
+    searchInput: {
+      flex: 1,
+      fontSize: 16,
+      fontWeight: "500",
+      color: colors.text,
+      padding: 0,
+    },
+
+    // Controls Container
+    controlsContainer: {
+      paddingHorizontal: 20,
+      marginBottom: 16,
+    },
+
+    // Filter Container
+    filterContainer: {
+      flexDirection: "row",
+      gap: 8,
+      marginBottom: 12,
+      marginLeft: 6,
+      marginRight: 6,
+    },
+    filterButton: {
+      flex: 1,
+    },
+    filterButtonInner: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      paddingVertical: 12,
+      paddingHorizontal: 12,
+      borderRadius: 12,
+      gap: 6,
+    },
+    filterButtonText: {
+      color: "#fff",
+      fontSize: 14,
+      fontWeight: "700",
+      letterSpacing: 0.3,
+    },
+    filterBadge: {
+      backgroundColor: "rgba(255, 255, 255, 0.3)",
+      paddingHorizontal: 8,
+      paddingVertical: 2,
+      borderRadius: 10,
+      minWidth: 24,
+      alignItems: "center",
+    },
+    filterBadgeText: {
+      color: "#fff",
+      fontSize: 12,
+      fontWeight: "800",
+    },
+
+    // Action Bar
+    actionBar: {
+      flexDirection: "row",
+      gap: 8,
+    },
+    sortButton: {
+      flex: 1,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: colors.card,
+      paddingVertical: 10,
+      paddingHorizontal: 16,
+      borderRadius: 12,
+      gap: 8,
+      borderWidth: 1,
+      borderColor: colors.border + "60",
+    },
+    sortButtonText: {
+      fontSize: 14,
+      fontWeight: "600",
+      color: colors.text,
+    },
+    clearButton: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundColor: colors.danger + "15",
+      paddingVertical: 10,
+      paddingHorizontal: 16,
+      borderRadius: 12,
+      gap: 6,
+      borderWidth: 1,
+      borderColor: colors.danger + "30",
+    },
+    clearButtonText: {
+      fontSize: 14,
+      fontWeight: "600",
+      color: colors.danger,
+    },
+
+    // Sort Menu
+    sortMenu: {
+      marginHorizontal: 20,
+      marginBottom: 12,
+      backgroundColor: colors.card,
+      borderRadius: 16,
+      padding: 8,
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.15,
+      shadowRadius: 12,
+      elevation: 8,
+    },
+    sortMenuItem: {
+      flexDirection: "row",
+      alignItems: "center",
+      paddingVertical: 14,
+      paddingHorizontal: 12,
+      gap: 12,
+      borderRadius: 10,
+    },
+    sortMenuText: {
+      fontSize: 15,
+      fontWeight: "600",
+      color: colors.text,
+    },
+
     inputSection: {
       paddingHorizontal: 24,
       paddingBottom: 12,
@@ -126,7 +306,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
       justifyContent: "center",
     },
     todoItemWrapper: {
-      marginVertical: 12,
+      marginVertical: 8,
     },
     todoItem: {
       flexDirection: "row",
@@ -219,6 +399,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
       justifyContent: "center",
       alignItems: "center",
       marginBottom: 24,
+      backgroundColor: colors.card,
     },
     emptyText: {
       fontSize: 24,
@@ -233,26 +414,6 @@ export const createHomeStyles = (colors: ColorScheme) => {
       lineHeight: 24,
       color: colors.textMuted,
     },
-    filterContainer: {
-  flexDirection: "row",
-  paddingHorizontal: 16,
-  paddingVertical: 12,
-  gap: 8,
-},
-filterButton: {
-  flex: 1,
-},
-filterButtonInner: {
-  paddingVertical: 8,
-  paddingHorizontal: 12,
-  borderRadius: 12,
-  alignItems: "center",
-},
-filterButtonText: {
-  color: "#fff",
-  fontSize: 14,
-  fontWeight: "600",
-},
   });
 
   return styles;
