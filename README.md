@@ -1,4 +1,43 @@
 # Welcome to your Expo app 👋
+<img src="assets/images/read/1.png" width="18%">..<img src="assets/images/read/2.png" width="18%">..<img src="assets/images/read/3.png" width="18%">..<img src="assets/images/read/4.png" width="18%">..<img src="assets/images/read/5.png" width="18%">
+<img src="assets/images/read/11.png" width="18%">..<img src="assets/images/read/12.png" width="18%">..<img src="assets/images/read/13.png" width="18%">..<img src="assets/images/read/14.png" width="18%">..<img src="assets/images/read/16.png" width="18%">
+
+
+# 👨‍💻 App Features Overview
+
+---
+
+## 📋 Todos Tab
+- ➕ **Add new tasks**
+- ✅ **Mark as completed / uncompleted**
+- 📝 **Edit existing tasks**
+- 🗑️ **Delete tasks**
+- 📊 **Live progress bar** at the top
+
+---
+
+## ⚙️ Settings Tab
+- 📈 **View task stats** (total, completed, remaining)
+- 🌙 **Toggle Dark Mode** (actually works!)
+- 🔔 **Notification toggle** (UI only)
+- 🔄 **Auto-sync toggle** (UI only)
+- 🚨 **Danger Zone** — delete everything
+
+---
+
+## 🔄 Real-Time Sync
+- ⚡ All updates reflect **instantly across devices**
+- 🗄️ Powered by **Convex** database
+
+---
+
+# 📁 .env Setup
+
+Create a `.env` file in the project root:
+
+
+
+
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
