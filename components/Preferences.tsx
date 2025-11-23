@@ -20,7 +20,7 @@ const Preferences = () => {
       {/* DARK MODE */}
       <View style={settingsStyles.settingItem}>
         <View style={settingsStyles.settingLeft}>
-          <LinearGradient colors={colors.gradients.primary} >
+          <LinearGradient colors={colors.gradients.primary} style={settingsStyles.settingIcon}>
             <Ionicons name="moon" size={18} color="#fff" />
           </LinearGradient>
           <Text style={settingsStyles.settingText}>Dark Mode</Text>
@@ -37,7 +37,7 @@ const Preferences = () => {
       {/* NOTIFICATONS */}
       <View style={settingsStyles.settingItem}>
         <View style={settingsStyles.settingLeft}>
-          <LinearGradient colors={colors.gradients.warning} >
+          <LinearGradient colors={colors.gradients.warning} style={settingsStyles.settingIcon}>
             <Ionicons name="notifications" size={18} color="#fff" />
           </LinearGradient>
           <Text style={settingsStyles.settingText}>Notifications</Text>
@@ -54,8 +54,8 @@ const Preferences = () => {
       {/* AUTO-SYNC */}
       <View style={settingsStyles.settingItem}>
         <View style={settingsStyles.settingLeft}>
-          <LinearGradient colors={colors.gradients.success} >
-            <Ionicons name="sync" size={18} color="#fff" />
+          <LinearGradient colors={colors.gradients.success} style={settingsStyles.settingIcon}>
+            <Ionicons name="notifications" size={18} color="#fff" />
           </LinearGradient>
           <Text style={settingsStyles.settingText}>Auto Sync</Text>
         </View>

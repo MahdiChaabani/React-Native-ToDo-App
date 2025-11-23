@@ -53,104 +53,6 @@ export const createHomeStyles = (colors: ColorScheme) => {
       fontWeight: "500",
       color: colors.textMuted,
     },
-    progressContainer: {
-      marginTop: 8,
-    },
-    progressBarContainer: {
-      flexDirection: "row",
-      alignItems: "center",
-      gap: 16,
-    },
-    progressBar: {
-      flex: 1,
-      height: 12,
-      borderRadius: 6,
-      overflow: "hidden",
-      backgroundColor: colors.border,
-    },
-    progressFill: {
-      height: "100%",
-      borderRadius: 6,
-    },
-    progressText: {
-      fontSize: 16,
-      fontWeight: "700",
-      minWidth: 40,
-      textAlign: "right",
-      color: colors.success,
-    },
-    
-    // Stats Bar
-    statsBar: {
-      flexDirection: "row",
-      marginHorizontal: 20,
-      marginBottom: 16,
-      backgroundColor: colors.card,
-      borderRadius: 16,
-      padding: 16,
-      shadowColor: "#000",
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.08,
-      shadowRadius: 8,
-      elevation: 4,
-    },
-    statItem: {
-      flex: 1,
-      alignItems: "center",
-    },
-    statNumber: {
-      fontSize: 24,
-      fontWeight: "800",
-      color: colors.text,
-      marginBottom: 4,
-    },
-    statLabel: {
-      fontSize: 12,
-      fontWeight: "600",
-      color: colors.textMuted,
-      textTransform: "uppercase",
-      letterSpacing: 0.5,
-    },
-    statDivider: {
-      width: 1,
-      height: "100%",
-      backgroundColor: colors.border + "40",
-      marginHorizontal: 8,
-    },
-
-    // Search Bar
-    searchContainer: {
-      paddingHorizontal: 20,
-      marginBottom: 12,
-    },
-    searchBar: {
-      flexDirection: "row",
-      alignItems: "center",
-      backgroundColor: colors.card,
-      borderRadius: 16,
-      paddingHorizontal: 16,
-      paddingVertical: 12,
-      gap: 12,
-      shadowColor: "#000",
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.05,
-      shadowRadius: 6,
-      elevation: 2,
-    },
-    searchInput: {
-      flex: 1,
-      fontSize: 16,
-      fontWeight: "500",
-      color: colors.text,
-      padding: 0,
-    },
-
-    // Controls Container
-    controlsContainer: {
-      paddingHorizontal: 20,
-      marginBottom: 16,
-    },
-
     // Filter Container
     filterContainer: {
       flexDirection: "row",
@@ -177,88 +79,32 @@ export const createHomeStyles = (colors: ColorScheme) => {
       fontWeight: "700",
       letterSpacing: 0.3,
     },
-    filterBadge: {
-      backgroundColor: "rgba(255, 255, 255, 0.3)",
-      paddingHorizontal: 8,
-      paddingVertical: 2,
-      borderRadius: 10,
-      minWidth: 24,
-      alignItems: "center",
+    progressContainer: {
+      marginTop: 8,
     },
-    filterBadgeText: {
-      color: "#fff",
-      fontSize: 12,
-      fontWeight: "800",
-    },
-
-    // Action Bar
-    actionBar: {
+    progressBarContainer: {
       flexDirection: "row",
-      gap: 8,
+      alignItems: "center",
+      gap: 16,
     },
-    sortButton: {
+    progressBar: {
       flex: 1,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundColor: colors.card,
-      paddingVertical: 10,
-      paddingHorizontal: 16,
-      borderRadius: 12,
-      gap: 8,
-      borderWidth: 1,
-      borderColor: colors.border + "60",
+      height: 12,
+      borderRadius: 6,
+      overflow: "hidden",
+      backgroundColor: colors.border,
     },
-    sortButtonText: {
-      fontSize: 14,
-      fontWeight: "600",
-      color: colors.text,
+    progressFill: {
+      height: "100%",
+      borderRadius: 6,
     },
-    clearButton: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundColor: colors.danger + "15",
-      paddingVertical: 10,
-      paddingHorizontal: 16,
-      borderRadius: 12,
-      gap: 6,
-      borderWidth: 1,
-      borderColor: colors.danger + "30",
+    progressText: {
+      fontSize: 16,
+      fontWeight: "700",
+      minWidth: 40,
+      textAlign: "right",
+      color: colors.success,
     },
-    clearButtonText: {
-      fontSize: 14,
-      fontWeight: "600",
-      color: colors.danger,
-    },
-
-    // Sort Menu
-    sortMenu: {
-      marginHorizontal: 20,
-      marginBottom: 12,
-      backgroundColor: colors.card,
-      borderRadius: 16,
-      padding: 8,
-      shadowColor: "#000",
-      shadowOffset: { width: 0, height: 4 },
-      shadowOpacity: 0.15,
-      shadowRadius: 12,
-      elevation: 8,
-    },
-    sortMenuItem: {
-      flexDirection: "row",
-      alignItems: "center",
-      paddingVertical: 14,
-      paddingHorizontal: 12,
-      gap: 12,
-      borderRadius: 10,
-    },
-    sortMenuText: {
-      fontSize: 15,
-      fontWeight: "600",
-      color: colors.text,
-    },
-
     inputSection: {
       paddingHorizontal: 24,
       paddingBottom: 12,
@@ -306,7 +152,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
       justifyContent: "center",
     },
     todoItemWrapper: {
-      marginVertical: 8,
+      marginVertical: 12,
     },
     todoItem: {
       flexDirection: "row",
@@ -399,7 +245,6 @@ export const createHomeStyles = (colors: ColorScheme) => {
       justifyContent: "center",
       alignItems: "center",
       marginBottom: 24,
-      backgroundColor: colors.card,
     },
     emptyText: {
       fontSize: 24,
