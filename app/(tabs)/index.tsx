@@ -32,7 +32,6 @@ export default function Index() {
 
   
   
-  
   // Calculate stats
   const stats = useMemo(() => {
     if (!todos) return { total: 0, completed: 0, active: 0 };
